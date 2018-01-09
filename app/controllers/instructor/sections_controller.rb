@@ -3,7 +3,6 @@ class Instructor::SectionsController < ApplicationController
     @course = Course.find(params[:course_id])
     @section = Section.new
   end
-
   def create
     @course = Course.find(params[:course_id])
     @section = @course.sections.create(section_params)
