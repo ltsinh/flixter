@@ -59,7 +59,14 @@ gem 'popper_js', '~> 1.11.1'
 gem 'bootstrap', '4.0.0.alpha6'
 gem 'devise'
 gem 'rubocop', require: false
+
 gem 'carrierwave', '~> 1.0'
+
+gem 'carrierwave-aws'
+
+gem 'figaro'
+
+gem "fog-aws"
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'

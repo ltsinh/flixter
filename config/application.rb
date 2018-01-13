@@ -16,3 +16,8 @@ module Flixter
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+#AWS_ACCESS_KEY: "AKIAJYTZKTSDDG3BP7LA"
+#AWS_SECRET_KEY: "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"
+
+#AWS_BUCKET: "my-bucket-name-2"
