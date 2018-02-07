@@ -56,7 +56,7 @@
 
     <!-- Lesson Form -->
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary btn-lg float-right new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
+    <button type="button" class="btn btn-outline-danger btn-lg waves-effect float-right new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
       New Lesson...
     </button>
 
@@ -103,8 +103,8 @@
           <%= f.input :title %>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-           <%= f.submit "Add a section", class: 'btn btn-primary' %>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+           <%= f.submit "Add a section", class: 'btn btn-danger' %>
         </div>
       <% end %>
       </div>
@@ -130,8 +130,8 @@
           <%= f.input :video %>
         </div >
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <%= f.submit "Add the lesson", class: 'btn btn-primary' %>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <%= f.submit "Add the lesson", class: 'btn btn-danger' %>
        </div>
      <% end %>
     </div>
