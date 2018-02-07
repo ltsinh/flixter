@@ -1,19 +1,26 @@
-<br />
+
+<div class="course-title">
+  <br />
+  <div class="frosty col-10 offset-1 text-center">
+    <br />
+      <h1>Photo and Video Topics</h1>
+    <br />
+  </div>
+</div>
 
 <div class="booyah-box col-10 offset-1">
-  <h1 class="text-center">Learn something today</h1>
-  <hr />
-
   <% @courses.each do |course| %>
       <%= image_tag course.image, class: 'img-fluid' %>
-    <h2 class="text-center"><%= course.title %></h2>
+      <p>
+
+    <h3 class="text-left"><%= course.title %></h3>
     <br />
     <div class="row">
     <div class="col-sm-8 col-12">
       <%= course.description %>
     </div>
     <div class="col-sm-4 col-12 text-center">
-      <%= link_to 'Button', '#', class: 'btn btn-primary btn-large' %>
+    <%= link_to "More Info...", course_path(course), class: "btn btn-outline-danger btn-sm waves-effect" %>
     </div>
   </div>
   <% end %>

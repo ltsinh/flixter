@@ -13,11 +13,10 @@
       <% if current_user && current_user == @course.user %>
         <br />
         <br />
-        <%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger btn-large' %>
+        <%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-outline-danger btn-sm waves-effect' %>
       <% end %>
       <br />
       <br />
-
 
       <% if current_user %>
         <% if current_user.enrolled_in?(@course) %>
