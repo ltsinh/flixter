@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .course-title {;
   background: image_url('peace.jpg') no-repeat center center fixed;
   background-size: cover;
-  height: 400px;
+  height: 250px;
   box-shadow: 0px 3px 8px #2a2a2a;
   }
 
@@ -167,4 +167,11 @@ body {
 
   .lessons li p {
   margin: 0;
+}
+
+.aboutus{
+  background: image_url('about.png');
+  background-size: cover;
+  height: 600px;
+  box-shadow: 0px 3px 8px #2a2a2a;
 }
