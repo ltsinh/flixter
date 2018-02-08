@@ -12,16 +12,17 @@
   <% @courses.each do |course| %>
       <%= image_tag course.image, class: 'img-fluid' %>
       <p>
-
     <h3 class="text-left"><%= course.title %></h3>
     <br />
     <div class="row">
     <div class="col-sm-8 col-12">
       <%= course.description %>
     </div>
+    <br />
     <div class="col-sm-4 col-12 text-center">
     <%= link_to "More Info...", course_path(course), class: "btn btn-outline-danger btn-sm waves-effect" %>
     </div>
   </div>
+  <br />
   <% end %>
 </div>
